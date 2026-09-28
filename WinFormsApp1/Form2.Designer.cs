@@ -34,15 +34,15 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            cmbDept = new ComboBox();
+            cmbType = new ComboBox();
+            txtName = new TextBox();
+            txtEdu = new TextBox();
+            txtEng = new TextBox();
+            txtMath = new TextBox();
+            btnSave = new Button();
+            btnReset = new Button();
+            btnClose = new Button();
             SuspendLayout();
             // 
             // label1
@@ -105,92 +105,92 @@
             label6.TabIndex = 5;
             label6.Text = "전형구분 :";
             // 
-            // comboBox1
+            // cmbDept
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(82, 30);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(263, 23);
-            comboBox1.TabIndex = 6;
+            cmbDept.FormattingEnabled = true;
+            cmbDept.Location = new Point(82, 30);
+            cmbDept.Name = "cmbDept";
+            cmbDept.Size = new Size(263, 23);
+            cmbDept.TabIndex = 6;
             // 
-            // comboBox2
+            // cmbType
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(83, 320);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(264, 23);
-            comboBox2.TabIndex = 7;
+            cmbType.FormattingEnabled = true;
+            cmbType.Location = new Point(83, 320);
+            cmbType.Name = "cmbType";
+            cmbType.Size = new Size(264, 23);
+            cmbType.TabIndex = 7;
             // 
-            // textBox1
+            // txtName
             // 
-            textBox1.Location = new Point(82, 90);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(263, 23);
-            textBox1.TabIndex = 8;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtName.Location = new Point(82, 90);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(263, 23);
+            txtName.TabIndex = 8;
+            txtName.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // txtEdu
             // 
-            textBox2.Location = new Point(83, 154);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(263, 23);
-            textBox2.TabIndex = 9;
+            txtEdu.Location = new Point(83, 154);
+            txtEdu.Name = "txtEdu";
+            txtEdu.Size = new Size(263, 23);
+            txtEdu.TabIndex = 9;
             // 
-            // textBox3
+            // txtEng
             // 
-            textBox3.Location = new Point(83, 213);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(263, 23);
-            textBox3.TabIndex = 10;
+            txtEng.Location = new Point(83, 213);
+            txtEng.Name = "txtEng";
+            txtEng.Size = new Size(263, 23);
+            txtEng.TabIndex = 10;
             // 
-            // textBox4
+            // txtMath
             // 
-            textBox4.Location = new Point(83, 266);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(263, 23);
-            textBox4.TabIndex = 11;
+            txtMath.Location = new Point(83, 266);
+            txtMath.Name = "txtMath";
+            txtMath.Size = new Size(263, 23);
+            txtMath.TabIndex = 11;
             // 
-            // button1
+            // btnSave
             // 
-            button1.Location = new Point(24, 383);
-            button1.Name = "button1";
-            button1.Size = new Size(82, 29);
-            button1.TabIndex = 12;
-            button1.Text = "저장";
-            button1.UseVisualStyleBackColor = true;
+            btnSave.Location = new Point(24, 383);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(82, 29);
+            btnSave.TabIndex = 12;
+            btnSave.Text = "저장";
+            btnSave.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnReset
             // 
-            button2.Location = new Point(144, 383);
-            button2.Name = "button2";
-            button2.Size = new Size(82, 29);
-            button2.TabIndex = 13;
-            button2.Text = "초기화";
-            button2.UseVisualStyleBackColor = true;
+            btnReset.Location = new Point(144, 383);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(82, 29);
+            btnReset.TabIndex = 13;
+            btnReset.Text = "초기화";
+            btnReset.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnClose
             // 
-            button3.Location = new Point(263, 383);
-            button3.Name = "button3";
-            button3.Size = new Size(82, 29);
-            button3.TabIndex = 14;
-            button3.Text = "종료";
-            button3.UseVisualStyleBackColor = true;
+            btnClose.Location = new Point(263, 383);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(82, 29);
+            btnClose.TabIndex = 14;
+            btnClose.Text = "종료";
+            btnClose.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(368, 450);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(btnClose);
+            Controls.Add(btnReset);
+            Controls.Add(btnSave);
+            Controls.Add(txtMath);
+            Controls.Add(txtEng);
+            Controls.Add(txtEdu);
+            Controls.Add(txtName);
+            Controls.Add(cmbType);
+            Controls.Add(cmbDept);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -211,14 +211,14 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private ComboBox cmbDept;
+        private ComboBox cmbType;
+        private TextBox txtName;
+        private TextBox txtEdu;
+        private TextBox txtEng;
+        private TextBox txtMath;
+        private Button btnSave;
+        private Button btnReset;
+        private Button btnClose;
     }
 }
